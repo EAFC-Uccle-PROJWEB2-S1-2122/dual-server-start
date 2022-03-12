@@ -67,3 +67,13 @@ Ajouter la variable d'environnement dans le fichier [.vscode/launch.json](https:
 ```
 
 ![Ports différents](react-client-server-different-ports.png)
+
+## Et les messages du backend dans la console ?
+
+Le mécanisme est identique, les messages en console du serveur backend sont configurés par une variable d'environnement, la variable `DEBUG`.
+
+Au final, sous Linux ou sur GitHub Codespaces, la bonne commande pour démarrer le serveur backend est :
+
+```Shell
+DEBUG="server:*" PORT=4000 npm start
+```
