@@ -40,6 +40,8 @@ npm start
 
 ### Dans un terminal *Linux* ou *Mac OS X*
 
+Cette solution fonctionne aussi lorsque l'on utilise un conteneur, comme c'est le cas dans GitHub Codespaces.
+
 ```Shell
 PORT=4000 npm start
 ```
