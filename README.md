@@ -23,6 +23,7 @@ const port = normalizePort(process.env.PORT || '3000');
 ```
 
 Voyons les différentes options pour que le serveur backend express.js démarre sur le port 4000.
+La solution adéquate dépendra du système d'exploitation que vous utilisez.
 
 ### Dans un terminal *Windows PowerShell*
 
@@ -49,6 +50,7 @@ PORT=4000 npm start
 ### Dans le debugger de *Visual Studio Code*
 
 C'est l'option que j'ai utilisée lors de la démo "bibliotheque".
+Elle fonctionne quel que soit le système d'exploitation.
 
 Ajouter la variable d'environnement dans le fichier [.vscode/launch.json](https://github.com/EAFC-Uccle-PROJWEB2-S1-2122/bibliotheque-froland/blob/main/.vscode/launch.json).
 
