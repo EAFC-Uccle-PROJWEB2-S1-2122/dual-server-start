@@ -65,3 +65,5 @@ Ajouter la variable d'environnement dans le fichier [.vscode/launch.json](https:
   ]
 }
 ```
+
+![Ports différents](react-client-server-different-ports.png)
