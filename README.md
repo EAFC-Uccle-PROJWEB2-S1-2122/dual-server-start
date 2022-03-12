@@ -13,3 +13,51 @@ Lorsque l'on essaye de démarrer le second, un erreur s'affiche comme sur la cap
 
 **La solution est simple : il faut qu'un des 2 serveurs utilise un autre port !**
 
+## Changer le port du backend
+
+Pour changer le port utilisé par le serveur express.js, il faut créer une variable d'environnement `PORT`.
+Cette variable est utilisée à la ligne 15 du fichier [server/bin/www](https://github.com/EAFC-Uccle-PROJWEB2-S1-2122/bibliotheque-froland/blob/main/server/bin/www) :
+
+```JavaScript
+const port = normalizePort(process.env.PORT || '3000');
+```
+
+Voyons les différentes options pour que le serveur backend express.js démarre sur le port 4000.
+
+### Dans un terminal *Windows PowerShell*
+
+```PowerShell
+$Env:PORT=4000
+npm start
+```
+
+### Dans un terminal *Windows Command-Line*
+
+```
+set PORT=4000
+npm start
+```
+
+### Dans un terminal *Linux* ou *Mac OS X*
+
+```Shell
+PORT=4000 npm start
+```
+
+### Dans le debugger de *Visual Studio Code*
+
+C'est l'option que j'ai utilisée lors de la démo "bibliotheque".
+
+Ajouter la variable d'environnement dans le fichier [.vscode/launch.json](https://github.com/EAFC-Uccle-PROJWEB2-S1-2122/bibliotheque-froland/blob/main/.vscode/launch.json).
+
+```YAML
+{
+  configurations": [
+    {
+      "env": {
+        "PORT": "4000"
+      }
+    }
+  ]
+}
+```
