@@ -9,7 +9,7 @@ Comme vu en bases des réseaux, deux serveurs ne peuvent pas écouter sur le mê
 C'est donc le premier serveur démarré qui gagne.
 Lorsque l'on essaye de démarrer le second, un erreur s'affiche comme sur la capture d'écran ci-dessous.
 
-![Même port](react-client-server-same-port.png)
+![Même port](react-client-serveur-same-port.png)
 
 **La solution est simple : il faut qu'un des 2 serveurs utilise un autre port !**
 
